@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gem Rush</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header>
+        <div>
+          <p class="eyebrow">Gem Rush</p>
+          <h1>Collect. Dodge. Survive.</h1>
+        </div>
+        <div class="scoreboard" aria-live="polite">
+          <div><span>Score</span><strong id="score">0</strong></div>
+          <div><span>Best</span><strong id="best">0</strong></div>
+        </div>
+      </header>
+
+      <section class="game-wrap">
+        <canvas id="game" width="720" height="720" aria-label="Gem Rush game"></canvas>
+        <div id="overlay" class="overlay">
+          <div class="overlay-card">
+            <p id="overlayEyebrow" class="eyebrow">Ready?</p>
+            <h2 id="overlayTitle">Gem Rush</h2>
+            <p id="overlayText">Collect the gems and avoid the red hazards.</p>
+            <button id="startButton" type="button">Start game</button>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <span><kbd>WASD</kbd> or <kbd>Arrow keys</kbd> to move</span>
+        <button id="pauseButton" type="button">Pause</button>
+      </footer>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>
